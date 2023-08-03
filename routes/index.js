@@ -20,4 +20,12 @@ router.get("/", function (req, res, next) {
 router.get("/new", function (req, res, next) {
   res.render("form", { title: "Mini Message Board", messages: messages });
 });
+router.post("/new", function (req, res, next) {
+  const newMessage = { added: new Date() };
+  newMessage.text = req.body.messageinput;
+  newMessage.user = req.body.userinput;
+  messages.push(newMessage);
+  res.redirect("/");
+});
+
 module.exports = router;
