@@ -4,5 +4,14 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+.message {
+  background-color: #00b7ff;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  margin: 0.25rem;
+}
+li {
+  list-style: none;
 }
