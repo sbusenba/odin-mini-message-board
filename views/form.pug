@@ -1,4 +1,7 @@
 form(method = "POST" action = "/new")
-    input(type="text",name="messageinput",value="enter message")
-    input(type="text",name="userinput",value="enter username")
+  div
+    label(for="messageinput") message:
+        input(type="text",name="messageinput")
+    label(for="userinput") user:
+        input(type="text",name="userinput")
     button(type="submit") Submit
